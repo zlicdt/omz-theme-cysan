@@ -2,7 +2,7 @@
 # Tested on Linux, Unix and Windows under ANSI colors.
 # It is recommended to use with a dark background.
 # Colors: black, red, green, yellow, *blue, magenta, cyan, and white,
-# 256 color: index 120, 123, 157, 046, 051, 225.
+# 256 color: index 120, 123, 157, 046, 051, 225, 224.
 #
 # Mar 2013 Yad Smood
 # Aug 2026 zlicdt
@@ -72,6 +72,7 @@ c3="%F{157}"
 c4="%F{046}"
 c5="%F{051}"
 c6="%F{225}"
+c7="%F{224}"
 re="%f%k"
 PROMPT="
 %{$terminfo[bold]${c4}%}*%{$reset_color%} \
@@ -85,5 +86,5 @@ ${git_info}\
 ${svn_info}\
 ${venv_info}\
  \
-%{${c6}%}[%*] $exit_code
+%{${c7}%}[%*] $exit_code
 %{$terminfo[bold]${c5}%}> %{$re%}"
