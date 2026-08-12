@@ -72,6 +72,7 @@ c3="%F{157}"
 c4="%F{046}"
 c5="%F{051}"
 c6="%F{225}"
+re="%f%k"
 PROMPT="
 %{$terminfo[bold]${c4}%}*%{$reset_color%} \
 %(#,%{$bg[yellow]%}%{$fg[black]%}%n%{$reset_color%},%{$terminfo[bold]${c2}%}%n) \
@@ -84,5 +85,5 @@ ${git_info}\
 ${svn_info}\
 ${venv_info}\
  \
-%{${c6}%}[%*] $exit_code %{$reset_color%}
-%{$terminfo[bold]${c5}%}> %{$reset_color%}"
+%{${c6}%}[%*] $exit_code
+%{$terminfo[bold]${c5}%}> %{$re%}"

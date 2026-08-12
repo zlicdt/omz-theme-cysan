@@ -5,5 +5,5 @@ Just download this cysan.zsh-theme file and place it to ~/.oh-my-zsh/custom/them
 
 You can run ->
 ```bash
-curl -O https://github.com/zlicdt/omz-theme-cysan/raw/refs/heads/master/cysan.zsh-theme ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/
+curl -o "${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/cysan.zsh-theme" https://github.com/zlicdt/omz-theme-cysan/raw/refs/heads/master/cysan.zsh-theme
 ```
