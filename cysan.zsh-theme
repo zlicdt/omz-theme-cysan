@@ -64,27 +64,27 @@ local exit_code="%(?,,C:%{$fg[red]%}%?%{$reset_color%})"
 #
 # For example:
 #
-# * ys @ ys-mbp -> ~/.oh-my-zsh on git:master x [21:47:42] C:0
+# * zlicdt @ Mac-mini -> ~/.oh-my-zsh on git:master x [21:47:42] C:0
 # >
-c1="%F{120}"
-c2="%F{123}"
-c3="%F{157}"
-c4="%F{046}"
-c5="%F{051}"
-c6="%F{225}"
-c7="%F{224}"
-re="%f%k"
+CLR_A="%F{120}"
+CLR_B="%F{123}"
+CLR_C="%F{157}"
+CLR_D="%F{046}"
+CLR_E="%F{051}"
+CLR_F="%F{225}"
+CLR_G="%F{224}"
+CLR_RSET="%f%k"
 PROMPT="
-%{$terminfo[bold]${c4}%}*%{$reset_color%} \
-%(#,%{$bg[yellow]%}%{$fg[black]%}%n%{$reset_color%},%{$terminfo[bold]${c2}%}%n) \
-%{%{$reset_color%}${c1}%}@ \
-%{${c6}%}[%{$terminfo[bold]${c3}%}%m%{${c6}%}] \
-%{${c6}%}-> \
-%{$terminfo[bold]${c2}%}%~%{$reset_color%}\
+%{$terminfo[bold]${CLR_D}%}*%{$reset_color%} \
+%(#,%{$bg[yellow]%}%{$fg[black]%}%n%{$reset_color%},%{$terminfo[bold]${CLR_B}%}%n) \
+%{${CLR_A}%}@ \
+%{${CLR_F}%}[${CLR_C}%m%{${CLR_F}%}] \
+%{${CLR_F}%}-> \
+%{$terminfo[bold]${CLR_B}%}%~%{$reset_color%}\
 ${hg_info}\
 ${git_info}\
 ${svn_info}\
 ${venv_info}\
  \
-%{${c7}%}[%*] $exit_code
-%{$terminfo[bold]${c5}%}> %{$re%}"
+%{${CLR_G}%}[%*] $exit_code
+%{$terminfo[bold]${CLR_E}%}> %{$reset_color%}%{$CLR_RSET%}"
