@@ -75,16 +75,16 @@ CLR_F="%F{225}"
 CLR_G="%F{224}"
 CLR_RSET="%f%k"
 PROMPT="
-%{$terminfo[bold]${CLR_D}%}*%{$reset_color%} \
-%(#,%{$bg[yellow]%}%{$fg[black]%}%n%{$reset_color%},%{$terminfo[bold]${CLR_B}%}%n) \
+%{${CLR_D}%}*%{$reset_color%} \
+%(#,%{$bg[yellow]%}%{$fg[black]%}%n%{$reset_color%},%{${CLR_B}%}%n) \
 %{${CLR_A}%}@ \
 %{${CLR_F}%}[${CLR_C}%m%{${CLR_F}%}] \
 %{${CLR_F}%}-> \
-%{$terminfo[bold]${CLR_B}%}%~%{$reset_color%}\
+%{${CLR_B}%}%~%{$reset_color%}\
 ${hg_info}\
 ${git_info}\
 ${svn_info}\
 ${venv_info}\
  \
 %{${CLR_G}%}[%*] $exit_code
-%{$terminfo[bold]${CLR_E}%}> %{$reset_color%}%{$CLR_RSET%}"
+%{${CLR_E}%}> %{$reset_color%}%{$CLR_RSET%}"
